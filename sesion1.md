@@ -4,4 +4,4 @@
 ## Sesión 1 
 
 
-No hay Actividad, se inicio de la actividad 2
+No hay Actividad, se inicio en la actividad 2
