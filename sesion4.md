@@ -60,10 +60,10 @@ public class Producto {
         System.out.println("Marca: " + Producto.marca);  
         System.out.println("Categoría: " + producto.categoria);  
 
-**// Modificar el precio utilizando el setter**
+**// Modificar el precio utilizando el setter**  
         producto.setPrecio(845.99);  
 
-**// Mostrar el producto actualizado**
+**// Mostrar el producto actualizado**  
         System.out.println(producto);  
     }  
 }  
