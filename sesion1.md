@@ -9,9 +9,9 @@ Cuestionario de Lógica de Programación en Java - Nivel Básico:
 
 ¿Cuál de las siguientes opciones es un tipo de dato primitivo en Java?
 
-a. String
-b. Integer
-**c. boolean**
+a. String  
+b. Integer  
+**c. boolean**  
 d. Object
 ¿Qué estructura de control se utiliza para repetir un bloque de código mientras se cumple una condición?
 
