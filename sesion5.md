@@ -43,7 +43,8 @@ class Vehiculo {
    }
 }
 
-**Automovil**  
+**Automovil**
+
 class Automovil extends Vehiculo {  
     private int numPuertas;  
     private String tipoTransmision;  
@@ -61,7 +62,8 @@ class Automovil extends Vehiculo {
     }
 }
 
-**Motocicleta**  
+**Motocicleta**
+
 class Motocicleta extends Vehiculo {  
     private String tipo;  
     private int cilindraje;  
