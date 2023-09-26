@@ -43,7 +43,7 @@ class Vehiculo {
    }
 }
 
-
+**Automovil**
 class Automovil extends Vehiculo {  
     private int numPuertas;  
     private String tipoTransmision;  
@@ -61,6 +61,7 @@ class Automovil extends Vehiculo {
     }
 }
 
+**Motocicleta**
 class Motocicleta extends Vehiculo {  
     private String tipo;  
     private int cilindraje;  
@@ -77,3 +78,4 @@ class Motocicleta extends Vehiculo {
         System.out.println("Cilindraje (cc): " + cilindraje);  
     }
 }
+
