@@ -75,14 +75,6 @@ package com.mycompany.moneda;
          super.mostrarInformacion();  
          System.out.println("La tendencia de los mercados para hoy es : " + precioDolar);  
  
-    }  
- }  
-
-**//HIJA**
-
-package com.mycompany.moneda;  
-
- public class cad extends Moneda {  
      
      private double preciocanadiense;  
 
@@ -95,9 +87,6 @@ package com.mycompany.moneda;
         return preciocanadiense;  
     }  
 
-    public void setPreciocanadiense(double preciocanadiense) {  
-        this.preciocanadiense = preciocanadiense;  
-    }  
   
      public void mostrar(){  
          super.mostrarInformacion();  
@@ -107,7 +96,6 @@ package com.mycompany.moneda;
     }  
  }  
 
-**//HIJA**
 
 package com.mycompany.moneda;  
 
@@ -128,9 +116,9 @@ package com.mycompany.moneda;
         this.preciomexicano = preciomexicano;  
     }  
            
-       public void mostrar(){  
-         super.mostrarInformacion();  
-         System.out.println("La tendencia de los mercados para hoy es : " + preciomexicano);  
-  
-    }  
- }  
+    public void mostrarInformacionAutomovil() {
+        mostrarInformacion();
+        System.out.println("Número de Puertas: " + numPuertas);
+        System.out.println("Tipo de Transmisión: " + tipoTransmision);
+    }
+}
