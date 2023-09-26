@@ -69,8 +69,8 @@ package com.mycompany.moneda;
 
     public void setPrecioDolar(double precioDolar) {  
         this.precioDolar = precioDolar;  
-    }  
-             
+}
+
      public void mostrar(){  
          super.mostrarInformacion();  
          System.out.println("La tendencia de los mercados para hoy es : " + precioDolar);  
