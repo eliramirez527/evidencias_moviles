@@ -4,10 +4,4 @@
 ## Sesión 1 
 
 
-<!-- Su documentación aquí -->
-
-
-
-
-
-
+No hay Actividad, se inicio en la actividad 2
