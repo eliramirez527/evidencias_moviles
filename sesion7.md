@@ -4,42 +4,41 @@
 ## Sesión 7 
 
 
-package com.mycompany.producto;
+package com.mycompany.producto;  
 
-public class Producto {
+public class Producto {  
 
-    private String nombre;
-    private double precio;
-    private int cantidad;
+    private String nombre;  
+    private double precio;  
+    private int cantidad;  
 
-    public Producto() {
-        this.nombre = "Desconocido";
-        this.precio = 0.00;
-        this.cantidad = 0;
+    public Producto() {  
+        this.nombre = "Desconocido";  
+        this.precio = 0.00;  
+        this.cantidad = 0;  
     }
 
-    public Producto(String nombre, double precio) {
-        this.nombre = nombre;
-        this.precio = precio;
-        this.cantidad = 0;
+    public Producto(String nombre, double precio) {  
+        this.nombre = nombre;  
+        this.precio = precio;  
+        this.cantidad = 0;  
     }
 
-    public Producto(String nombre, double precio, int cantidad) {
-        this.nombre = nombre;
-        this.precio = precio;
-        this.cantidad = cantidad;
+    public Producto(String nombre, double precio, int cantidad) {  
+        this.nombre = nombre;  
+        this.precio = precio;  
+        this.cantidad = cantidad;  
+
+    public double calcularValorTotal() {  
+        return this.precio * this.cantidad;  
     }
 
-    public double calcularValorTotal() {
-        return this.precio * this.cantidad;
-    }
-
-    public void mostrarInformacion() {
-        System.out.println("Informacion Producto");
-        System.out.println("Nombre" + nombre);
-        System.out.println("Precio" + precio);
-        System.out.println("Cantidad" + cantidad);
-        System.out.println("Valor tototal : $" + calcularValorTotal());
+    public void mostrarInformacion() {  
+        System.out.println("Informacion Producto");  
+        System.out.println("Nombre" + nombre);  
+        System.out.println("Precio" + precio);  
+        System.out.println("Cantidad" + cantidad);  
+        System.out.println("Valor tototal : $" + calcularValorTotal());  
     }
 
     public void incrementarCantidad() {
