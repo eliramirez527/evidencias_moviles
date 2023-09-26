@@ -33,20 +33,6 @@ public class Jugadores {
     return nombre;    
   }
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-**//Diapositiva**
-
-https://drive.google.com/drive/folders/1xhXoN0igND6-2fsVVFBmnp9HQPVlO-gI
-=======
   public void setNombre(String nombre) {  
     this.nombre = nombre;  
   }  
@@ -101,5 +87,3 @@ https://drive.google.com/drive/folders/1xhXoN0igND6-2fsVVFBmnp9HQPVlO-gI
 
 [Texto del enlace](https://drive.google.com/drive/folders/1xhXoN0igND6-2fsVVFBmnp9HQPVlO-gI)
 
-.
->>>>>>> 39154d2fcdb8390da8180043233b4ebbad1460a4
