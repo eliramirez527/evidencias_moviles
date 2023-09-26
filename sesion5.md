@@ -8,7 +8,7 @@ package com.mycompany.moneda;
 
 **//SUPER CLASE**
 
-class Moneda {  
+class Moneda {   
     private String nombre;  
     private String símbolo;  
     private String mercados;  
@@ -17,7 +17,7 @@ class Moneda {
         this.nombre = nombre;  
         this.símbolo = símbolo;  
         this.mercados = mercados;  
-    }
+    }  
 
     public String getNombre() {  
         return nombre;  
