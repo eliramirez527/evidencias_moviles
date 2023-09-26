@@ -4,121 +4,76 @@
 ## Sesión 5 
 
 
-package com.mycompany.moneda;
+package com.mycompany.vehiculo;  
 
-**//SUPER CLASE**
 
-class Moneda {   
-    private String nombre;  
-    private String símbolo;  
-    private String mercados;  
+       // Clase base: Vehiculo  
 
-    public Moneda(String nombre, String símbolo, String mercados) {  
-        this.nombre = nombre;  
-        this.símbolo = símbolo;  
-        this.mercados = mercados;  
+class Vehiculo {  
+    protected String marca; // Cambiamos a protegido  
+    protected String modelo; // Cambiamos a protegido  
+    private int año;  
+
+    public Vehiculo(String marca, String modelo, int año) {  
+        this.marca = marca;  
+        this.modelo = modelo;  
+        this.año = año;  
     }  
 
-    public String getNombre() {  
-        return nombre;  
+    public void mostrarInformacion() {  
+        System.out.println("Marca: " + marca);  
+        System.out.println("Modelo: " + modelo);  
+        System.out.println("Año: " + año);  
     }  
 
-    public void setNombre(String nombre) {  
-        this.nombre = nombre;  
-    }  
-
-    public String getSímbolo() {  
-        return símbolo;  
-    }  
-
-    public void setSímbolo(String símbolo) {  
-        this.símbolo = símbolo;  
-    }  
-
-    public String getMercados() {  
-        return mercados;  
-    }  
-
-    public void setMercados(String mercados) {  
-        this.mercados = mercados;  
-    }  
-
-     public void mostrarInformacion() {  
-        System.out.println("Nombre: " + nombre);  
-        System.out.println("Simbolo: " + símbolo);  
-        System.out.println("Mercado: " + mercados);  
-     }  
-}  
-
-**//HIJA**
-
-package com.mycompany.moneda;  
-
- public class usd extends Moneda {  
+    public class Main {  
+    public static void main(String[] args) {  
      
-     private double precioDolar;  
+        Automovil automovil = new Automovil("Chevoret", "Blazzer", 2022, 4, "Automática");  
 
-    public usd(double precioDolar, String nombre, String símbolo, String mercados) {  
-        super(nombre, símbolo, mercados);  
-        this.precioDolar = precioDolar;  
-    }  
-
-    public double getPrecioDolar() {  
-        return precioDolar;  
-    }  
-
-    public void setPrecioDolar(double precioDolar) {  
-        this.precioDolar = precioDolar;  
+        System.out.println("Información del Automóvil:");  
+        automovil.mostrarInformacionAutomovil();         
+       
+        Motocicleta motocicleta = new Motocicleta("BMW", "1200", 2021, "Deportiva", 1200);  
+        
+        System.out.println("\nInformación de la Motocicleta:");  
+        motocicleta.mostrarInformacionMotocicleta();  
+     
+    }
+   }
 }
 
-     public void mostrar(){  
-         super.mostrarInformacion();  
-         System.out.println("La tendencia de los mercados para hoy es : " + precioDolar);  
- 
-     
-     private double preciocanadiense;  
 
-    public cad(double preciocanadiense, String nombre, String símbolo, String mercados) {  
-        super(nombre, símbolo, mercados);  
-        this.preciocanadiense = preciocanadiense;  
+class Automovil extends Vehiculo {  
+    private int numPuertas;  
+    private String tipoTransmision;  
+
+    public Automovil(String marca, String modelo, int año, int numPuertas, String tipoTransmision) {  
+        super(marca, modelo, año);  
+        this.numPuertas = numPuertas;  
+        this.tipoTransmision = tipoTransmision;  
+    }
+
+    public void mostrarInformacionAutomovil() {  
+        mostrarInformacion();  
+        System.out.println("Número de Puertas: " + numPuertas);  
+        System.out.println("Tipo de Transmisión: " + tipoTransmision);  
+    }
+}
+
+class Motocicleta extends Vehiculo {  
+    private String tipo;  
+    private int cilindraje;  
+
+    public Motocicleta(String marca, String modelo, int año, String tipo, int cilindraje) {  
+        super(marca, modelo, año);  
+        this.tipo = tipo;  
+        this.cilindraje = cilindraje;  
     }  
 
-    public double getPreciocanadiense() {  
-        return preciocanadiense;  
-    }  
-
-  
-     public void mostrar(){  
-         super.mostrarInformacion();  
-         System.out.println("La tendencia de los mercados para hoy es : " + preciocanadiense);  
- 
- 
-    }  
- }  
-
-
-package com.mycompany.moneda;  
-
- public class mxm extends Moneda {  
-     
-     private double preciomexicano;  
-
-    public mxm(double preciomexicano, String nombre, String símbolo, String mercados) {  
-        super(nombre, símbolo, mercados);  
-        this.preciomexicano = preciomexicano;  
-    }  
-
-    public double getPreciomexicano() {  
-        return preciomexicano;  
-    }  
-
-    public void setPreciomexicano(double preciomexicano) {  
-        this.preciomexicano = preciomexicano;  
-    }  
-           
-    public void mostrarInformacionAutomovil() {
-        mostrarInformacion();
-        System.out.println("Número de Puertas: " + numPuertas);
-        System.out.println("Tipo de Transmisión: " + tipoTransmision);
+    public void mostrarInformacionMotocicleta() {  
+        mostrarInformacion();  
+        System.out.println("Tipo de Motocicleta: " + tipo);  
+        System.out.println("Cilindraje (cc): " + cilindraje);  
     }
 }
