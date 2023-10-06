@@ -12,7 +12,7 @@ public class AppConversor {
 
     public static void main(String[] args) {  
 
-        System.out.println("");  
+         System.out.println("");  
         System.out.println("**********Temperatura*********");  
         Temperatura t1 = new Temperatura("Celsius", "Fahrenheit");  
         Temperatura t2 = new Temperatura("Fahrenheit", "Celsius");  
@@ -25,13 +25,14 @@ public class AppConversor {
         res = t2.convertir(10);  
         System.out.println("De Fahrenheit a Celsius " + res);  
         res = t3.convertir(15);  
-        System.out.println("De Fahrenheit a Celsius " + res);  
+        System.out.println("De Celsius a Kelvin " + res);  
         res = t4.convertir(20);  
-        System.out.println("De Fahrenheit a Celsius " + res);  
+        System.out.println("De Kelvin a Celsius " + res);  
         res = t5.convertir(23);  
-        System.out.println("De Fahrenheit a Celsius " + res);  
+        System.out.println("De Fahrenheit a Kelvin " + res);  
         res = t6.convertir(10);  
-        System.out.println("De Fahrenheit a Celsius " + res);  
+        System.out.println("De Kelvin a Fahrenheit " + res);  
+
 
         System.out.println("");  
         System.out.println("**********Longitud*********");  
