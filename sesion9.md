@@ -278,5 +278,7 @@ public class binario extends Conversor {
         }  
      }  
 
-    }  
-    ```
+    } 
+    
+```
+    
