@@ -277,8 +277,7 @@ public class binario extends Conversor {
             throw new IllegalArgumentException("Unidades de conversión no compatibles");  
         }  
      }  
-
-    } 
-    
+}
 ```
+
     
