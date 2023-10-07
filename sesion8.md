@@ -5,7 +5,7 @@
 
 **Principal**
 
-
+```java
 import java.util.ArrayList;  
 
 public class principal {  
@@ -49,7 +49,9 @@ public class principal {
     }
 
 }
+```
 
+```java
 **Musica**
 
 public abstract class musica{  
@@ -68,7 +70,9 @@ public abstract void pause();
 public abstract void next();  
 public abstract void previus();  
 }
+```
 
+```java
 **Cancion** 
 
 public class cancion extends musica {  
@@ -116,7 +120,8 @@ public class cancion extends musica {
     }
 
 }
-
+```
+```java
 **Banda Sonora**
 
 public class bandaSonora extends musica {  
@@ -156,7 +161,8 @@ public class bandaSonora extends musica {
        System.out.println("retroceder banda sonora ");   
     }
 }
-
+```
+```java
 **Album**
 
 import java.util.ArrayList;  
@@ -200,4 +206,4 @@ public class album extends musica {
     }
 
   }
-
+```
