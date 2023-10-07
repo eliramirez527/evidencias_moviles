@@ -101,7 +101,7 @@ public class AppConversor {
     }  
 }  
 ```
-
+```java
 **Conversor**  
 
 package com.mycompany.appconversor;  
@@ -118,6 +118,8 @@ public abstract class Conversor {
     public abstract double convertir(double cantidad);     
     
 }  
+```
+```java
 
 **Temperatura**  
 
@@ -154,7 +156,8 @@ public class Temperatura extends Conversor {
         }  
     }  
 }  
-
+```
+```java
 **Longitud**  
 
 public class Longitud extends Conversor {  
@@ -178,7 +181,9 @@ public double convertir(double cantidad) {
     }  
    }  
 }  
+```
 
+```java
 **Peso**
 
 public class Peso extends Conversor {  
@@ -202,7 +207,8 @@ public double convertir(double cantidad) {
     }  
   }  
 }  
-
+```
+```java
 **Divisas**
 
  public class Divisas extends Conversor{  
@@ -226,7 +232,8 @@ public double convertir(double cantidad) {
         }  
     }  
 }  
-
+```
+```java
 **Binarios**
 
 public class binario extends Conversor {  
@@ -266,4 +273,4 @@ public class binario extends Conversor {
      }  
 
     }  
-    
+    ```
