@@ -3,7 +3,7 @@
 
 ## Sesión 7 
 
-
+```java
 package com.mycompany.producto;  
 
 public class Producto {  
@@ -63,6 +63,9 @@ public class Producto {
             System.out.println("Moneda no admitida");
         }
     }
+}   
+```
+```java
     public static void main(String[] args) {        
         Producto producto1 = new Producto();
         Producto producto2 = new Producto("Producto 2", 10.0);
@@ -105,3 +108,4 @@ public class Producto {
     }
 
 }
+```
