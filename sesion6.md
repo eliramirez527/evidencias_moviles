@@ -3,7 +3,7 @@
 
 ## Sesión 6
 
-
+```java
 package com.mycompany.moneda;
 
 **//SUPER CLASE**
@@ -50,6 +50,9 @@ class Moneda {
      }  
 }  
 
+```
+```java
+
 **//HIJA**
 
 package com.mycompany.moneda;  
@@ -78,6 +81,8 @@ package com.mycompany.moneda;
     }  
  }  
 
+```
+```java
 **//HIJA**
 
 package com.mycompany.moneda;  
@@ -106,7 +111,8 @@ package com.mycompany.moneda;
  
     }  
  }  
-
+```
+```java
 **//HIJA**
 
 package com.mycompany.moneda;  
@@ -125,3 +131,4 @@ package com.mycompany.moneda;
     }  
 
  }
+ ```
