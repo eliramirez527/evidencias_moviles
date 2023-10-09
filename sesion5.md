@@ -6,7 +6,7 @@
 
 package com.mycompany.vehiculo;  
 
-
+```java
        // Clase base: Vehiculo  
 
 class Vehiculo {  
@@ -43,6 +43,9 @@ class Vehiculo {
    }
 }
 
+```
+```java
+
 **Automovil**
 
 class Automovil extends Vehiculo {  
@@ -61,6 +64,9 @@ class Automovil extends Vehiculo {
         System.out.println("Tipo de Transmisión: " + tipoTransmision);  
     }
 }
+
+```
+```java
 
 **Motocicleta**
 
@@ -81,3 +87,4 @@ class Motocicleta extends Vehiculo {
     }
 }
 
+```
