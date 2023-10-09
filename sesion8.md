@@ -61,102 +61,118 @@ public class principal {
 ```java
 **Musica**
 
-public abstract class musica{  
-    private String titulo;  
+package com.mycompany.musica;
 
-    public musica(String titulo) {  
-        this.titulo = "Rock";  
-    }  
+public abstract class musica {
 
-    public String getTitulo() {  
-        return titulo;  
-    }      
-public abstract void play();  
-public abstract void stop();  
-public abstract void pause();  
-public abstract void next();  
-public abstract void previus();  
+    private String titulo;
+
+    public musica(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public abstract void play();
+    public abstract void stop();
+    public abstract void pause();
+    public abstract void next();
+    public abstract void previus();
+
 }
+
 ```
 
 ```java
 **Cancion** 
+
+package com.mycompany.musica;
 
 public class cancion extends musica {
 
     private String artista;
     private String album;
 
-    public cancion(String artista, String album, String titulo) {
+    public cancion(String titulo, String artista, String album) {
         super(titulo);
         this.artista = artista;
         this.album = album;
     }
-   
+
+    public String getArtista() {
+        return artista;
+    }
+
+    public String getAlbum() {
+        return album;
+    }
 
     @Override
     public void play() {
-        System.out.println("Reproducir cancion");
+        System.out.println("Reproduciendo canción " + getTitulo() + " de " + artista + " del álbum " + album);
     }
 
     @Override
     public void stop() {
-        System.out.println("Detener cancion ");
+        System.out.println("Deteniendo canción " + getTitulo());
     }
 
     @Override
     public void pause() {
-        System.out.println("Detener cancion ");
+        System.out.println("Pausando canción " + getTitulo());
     }
 
     @Override
     public void next() {
-        System.out.println("Pausar la siguiente cancion");
+        System.out.println("Avanzando a la siguiente canción");
     }
-
     @Override
     public void previus() {
-        System.out.println("Retrocer a la canción anterior ");
+        System.out.println("Retrocediendo a la canción anterior");
+
     }
- 
- }
+}
 
 ```
 ```java
 **Banda Sonora**
 
-public class bandaSonora extends musica {
+package com.mycompany.musica;
+
+
+public class BandaSonora extends musica {
     private String pelicula;
 
-    public bandaSonora(String pelicula, String titulo) {
+    public BandaSonora(String titulo, String pelicula) {
         super(titulo);
         this.pelicula = pelicula;
     }
-   
 
     @Override
     public void play() {
-        System.out.println("Reproducir anda sonora de la película: " );
+        System.out.println("Reproduciendo banda sonora de " + pelicula + " - " + getTitulo());
     }
 
     @Override
     public void stop() {
-        System.out.println("Detener banda sonora de la película: " );
+        System.out.println("Detener banda sonora de la película: " + pelicula);
     }
 
     @Override
     public void pause() {
-        System.out.println("Päusa banda sonora ");
+        System.out.println("Pausando banda sonora de " + pelicula);
     }
 
     @Override
     public void next() {
-       System.out.println("Siguiente banda sonora ");
+       System.out.println("Avanzando a la siguiente canción de la banda sonora de " + pelicula);
     }
 
     @Override
     public void previus() {
-       System.out.println("retroceder banda sonora ");
+       System.out.println("Retrocediendo a la canción anterior de la banda sonora de " + pelicula);
     }
 }
 ```
